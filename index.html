@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">-->
+    <link rel="stylesheet" href="./dist/css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alata&family=Barlow:ital,wght@1,600&family=Big+Shoulders+Display:wght@700&family=Comforter&family=Commissioner:wght@400;500;600;700&family=Epilogue:ital,wght@0,500;0,700;1,500;1,700&family=Fraunces:ital,opsz,wght@0,9..144,700;0,9..144,900;1,9..144,700&family=Heebo&family=IBM+Plex+Sans+Thai+Looped&family=Inria+Sans:wght@700&family=Josefin+Sans:ital,wght@0,400;0,600;1,400;1,600&family=Kumbh+Sans:wght@400;700&family=Lato:wght@300;400;700&family=Lexend+Deca&family=Libre+Franklin:ital,wght@0,300;0,600;0,700;1,300;1,600;1,700&family=Luckiest+Guy&family=Manrope:wght@600;700;800&family=Montserrat:ital,wght@0,300;0,400;0,500;0,700;1,500&family=Open+Sans:ital,wght@0,700;1,700&family=Outfit:wght@400;700&family=Overpass:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Raleway:ital,wght@0,400;0,700;1,400;1,700&family=Tiro+Devanagari+Hindi:ital@1&display=swap" rel="stylesheet">
+    <title>PING</title>
+</head>
+<body  onload='document.form1.email.focus()'>
+    <div class="logo">
+        <img src="images/logo.svg" alt="ping logo">
+    </div>
+<div class="top-content">
+    <h1><span style="color:hsl(0, 0%, 59%);">We are launching</span> <span style= "color:hsl(209, 33%, 12%);">soon!</span></h1>
+    <p>subscribe and get notified</p>
+</div>
+
+<div class="email-form">
+    <form  name="form1">
+        <input type="email" id="email" name="email" placeholder="Your email address">
+        <p id="demo"></p>
+        <div class="btn">
+            <button onclick="ValidateEmail(document.form1.email)">notify me</button>
+        </div>
+    </form>
+</div>
+<div class="img">
+        <img src="images/illustration-dashboard.png" alt="illustration dashboard" style="width:100%;" class="slide-in">
+</div>
+<div class="footer">
+    <div class="icons">
+        <i class="fa-brands fa-facebook-f"></i>
+       <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-instagram"></i>
+    </div>
+    <p>&copy; Copyright Ping.All right reserved.</p>
+</div>
+    <script src="script.js"></script>
+</body>
+</html>

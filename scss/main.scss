@@ -1,0 +1,123 @@
+@import "resets";
+@import "colors";
+
+body {
+  background-color: $white;
+}
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 100px;
+}
+.top-content {
+  padding-top: 30px;
+
+  & h1 {
+    text-align: center;
+    font-size: 20px;
+    font-family: "Libre Franklin", sans-serif;
+    font-size: 700;
+  }
+
+  & p {
+    text-align: center;
+    font-size: 20px;
+    font-family: "Libre Franklin", sans-serif;
+    font-size: 300;
+    color: $veryDarkBlue;
+  }
+}
+#demo {
+  color:$lightRed;
+  font-size: 16px;
+  font-family: "Libre Franklin", sans-serif;
+  font-size: 300;
+ text-align: center;
+  padding-top: 8px;
+}
+.email-form form input::placeholder {
+    color: $gray;
+    font-size: 16px;
+    font-family: "Libre Franklin", sans-serif;
+    font-size: 300;
+
+}
+.email-form form input:focus {
+  //border: 3px solid $paleBlue;
+  outline: $paleBlue;
+}
+.email-form {
+  padding-top: 30px;
+
+  & form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  & input {
+    margin: 0 auto;
+    width: 70%;
+    border: 3px solid $paleBlue;
+    border-radius: 30px;
+    padding: 15px 30px;
+  }
+  & button {
+    margin: 0 auto;
+    width: 90%;
+    border: 5px solid $blue;
+    background-color: $blue;
+    border-radius: 30px;
+    padding: 10px 30px;
+    text-transform: capitalize;
+    color: white;
+    font-size: 20px;
+    font-family: "Libre Franklin", sans-serif;
+    font-size: 300;
+   cursor: pointer;
+  }
+}
+.btn {
+    text-align: center;
+    padding-top: 0px;
+    padding-bottom: 30px;
+}
+.img {
+    padding: 50px 0;  
+}
+.slide-in {
+    animation:  slideMe .7s ease-in;
+}
+@keyframes slideMe {
+    0% {
+        transform: skewX(53deg) translateX(-500px);
+    }
+    100% {
+        transform: skew(0deg);
+    }
+}
+.footer {
+    padding: 30px 0;
+    background-color: $white;
+
+    & p {
+      text-align: center;
+      position: relative;
+      top: 30px;
+      font-size: 16px;
+      font-family: "Libre Franklin", sans-serif;
+      font-size: 300;
+      color: $paleBlue;
+    }
+}
+.icons {
+  display: flex;
+  justify-content: center
+
+ 
+}
+.fa-brands {
+  color: $blue;
+  font-size: 20px;
+  padding-right: 25px;
+}
